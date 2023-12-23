@@ -5,7 +5,7 @@ body {
    
 }
 
-
+@media only screen and (min-width: 768px){
 
 .first>img {
 
@@ -77,6 +77,7 @@ button {
     height: 200px;
     animation: glow  2s alternate infinite;
 }
+
 @keyframes glow {
     0%{
        filter:  drop-shadow(0 0 20px black );
@@ -84,5 +85,73 @@ button {
 
     100% {
         filter : drop-shadow(0 0 80px black  );
+    }
+}
+}
+@media only screen and (max-width: 320px){
+
+    div>h1 {
+        text-align: center;
+        font-family: 'Chakra Petch', sans-serif;
+        font-size: 30px;
+        margin-top: 40%;
+        margin-bottom: 3%;
+
+    }
+
+    
+    .first>img {
+
+        height: 80px;
+        margin-top: 0%;
+        position: absolute;
+       left: 50%;
+       top: 10%;
+       transform: translate(-50%, -50%);
+    }
+    .dice>p {
+        font-size: 20px;
+        font-weight: bold;
+        margin-top: 0%;
+        margin-bottom: 2%;
+       
+    }
+    .player {
+
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        gap: 70px;
+        margin-top: 20%;
+    }
+    #diceimage{
+
+        filter: drop-shadow(0 0 50px black  );
+        height: 120px;
+        animation: glow  2s alternate infinite;
+    }
+    .winner {
+        text-align: center;
+        font-family: 'Chakra Petch', sans-serif;
+        font-size: larger;
+        font-weight: bold;
+        margin-top: 2%;
+        margin-bottom: 3%;
+    }
+    .btn {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+    
+    button {
+        border-radius: 12px;
+        background-color: black;
+        border: none;
+        color: blanchedalmond;
+        padding: 10px 40px 10px 40px;
+        width: 150px;
+        height: 40px;
     }
 }
